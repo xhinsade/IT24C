@@ -1,41 +1,46 @@
 body{
-    background-image: url("bg-images/home.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("bg-images/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+
 }
-h1{
-    color: rgb(60, 179, 113), blue;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 100px;
-}.header {
+@font-face {
+font-family: 'Adlery Pro';
+src: url('fonts/adlery-pro-font/AdleryPro-xD7K.ttf') format('woff2'), /* Adjust file type if necessary */
+     url('fonts/adlery-pro-font/AdleryProBlockletter-pW8K.ttf') format('woff'); /* Adjust file type if necessary */
+font-weight: 5rem; /* Adjust based on the font */
+font-style: normal; /* Adjust if it's italic or bold */
+}
+
+section p {
+  text-align: center; /* Centers the text */
+  font-size: 20px; /* Optional: adjust font size */
+  color: whitesmoke; /* Optional: change text color */
+  
+}
+
+
+
+h1 {
+color: whitesmoke;
+text-align: center;
+font-family: 'Adlery Pro', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 75px;
+}
+
+.header {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
     overflow: hidden;
-    background-color: rgb(33, 117, 7);
-    /*padding: 20px 10px;*/
-  }
-  
-  .header img{
-    height: 50px;
-    width: 50px;
-  }
-  
-  
-  /* Style the header links */
-  .header a {
-    float: left;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-  }
-  
-  .header-Left {
-    display: flex; /* Make sure items are aligned in a row */
+    background-color: rgb(124, 35, 76);
+    padding: 20px 10px;
+}
+
+.header-Left {
+    display: flex; /* Keep items in a row */
     align-items: center; /* Center items vertically */
 }
 
@@ -43,37 +48,51 @@ h1{
     height: 40px; /* Set a smaller height */
     width: 40px; /* Set a smaller width */
     border-radius: 50%; /* Make the image round */
-    margin-right: 10px; /* Space between logo and text */
-    vertical-align: middle; /* Aligns the logo with the text */
+    margin-right: 15px; /* Space between logo and text */
 }
-  /* Change the background color on mouse-over */
-  .header a:hover {
-    background-color: rgb(88, 3, 3);
-    color: White;
-  }
-  
-  .header a.active {
-    background-color: rgb(54, 54, 1);
-    color: white;
-  }
-  
-  /* Float the link section to the right */
-  .header-Right {
-    float: right;
-  }
 
-  .footer{
-    position:fixed;
+.header-Right {
+    display: flex; /* Use flex for navigation links */
+    align-items: center; /* Center links vertically */
+}
+
+.header a {
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 10px; /* Space between navigation links */
+}
+
+.header a:hover {
+    background-color: rgba(201, 52, 114, 0.637);
+    color: white;
+}
+
+.header a.active {
+    background-color: rgb(121, 7, 64);
+    color: white;
+}
+
+.footer {
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(153, 245, 125);
-    color: rgb(13, 151, 75);
+    background-color: rgb(66, 6, 41);
+    color: white;
     text-align: center;
-  }
-  #content{
-    color: maroon;
+    padding: 15px;
+}
+
+#content {
+    color: rgb(252, 247, 247);
     text-align: justify;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 75px;
-  }
+}
