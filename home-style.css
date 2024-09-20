@@ -45,12 +45,11 @@ font-size: 75px;
 }
 
 .logo-img {
-    height: 60px; /* Set a smaller height */
-    width: 60px; /* Set a smaller width */
-    border-radius: 50%; /* Make the image round */
-    margin-right: 15px; /* Space between logo and text */
+    height: 70px;
+    width: 70px; 
+    border-radius: 50%; 
+    margin-right: 5px; 
 }
-
 .header-Right {
     display: flex; /* Use flex for navigation links */
     align-items: center; /* Center links vertically */

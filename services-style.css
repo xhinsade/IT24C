@@ -35,7 +35,7 @@ section p {
 
 .about-content {
     background-color: #8d8c8c; /* Gray background */
-    border: 3px solid #ddd; /* Lighter border */
+    border: 3px solid; /* Lighter border */
     padding: 35px; /* Padding */
     margin: 35px; /* Margin */
     border-radius: 5px; /* Rounded corners */
@@ -68,12 +68,14 @@ h1 {
     align-items: center; /* Center items vertically */
 }
 
+
 .logo-img {
-    height: 40px; /* Set a smaller height */
-    width: 40px; /* Set a smaller width */
-    border-radius: 50%; /* Make the image round */
-    margin-right: 15px; /* Space between logo and text */
+    height: 70px;
+    width: 70px; 
+    border-radius: 50%; 
+    margin-right: 5px; 
 }
+
 
 .header-Right {
     display: flex; /* Use flex for navigation links */
