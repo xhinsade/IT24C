@@ -4,36 +4,31 @@ body{
     background-size: cover;
     align-items: center;
     justify-content: center;
-    ;
   
   }
   @font-face {
   font-family: 'Adlery Pro';
-  src: url('fonts/adlery-pro-font/AdleryPro-xD7K.ttf') format('woff2'), 
-       url('fonts/adlery-pro-font/AdleryProBlockletter-pW8K.ttf') format('woff');
-  font-weight: 5rem; 
-  font-style: normal; 
+  src: url('fonts/adlery-pro-font/AdleryPro-xD7K.ttf') format('woff2'), /* Adjust file type if necessary */
+       url('fonts/adlery-pro-font/AdleryProBlockletter-pW8K.ttf') format('woff'); /* Adjust file type if necessary */
+  font-weight: 5rem; /* Adjust based on the font */
+  font-style: normal; /* Adjust if it's italic or bold */
   }
   
-  .about-content {
-    text-align: center;
-    text-align: justify;
-    margin: 0 auto; 
-    max-width: 1200px; 
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
-    color: white ;
+  
+  .resume {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    margin-top: 20px; /* Space above */
+    margin-bottom: 40px; /* Space below */
+}
 
-  }
-  
   
   h1 {
   color: whitesmoke;
   text-align: center;
   font-family: 'Adlery Pro', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 75px;
-  
-
   }
   
   .header {
@@ -51,8 +46,8 @@ body{
   }
   
   .logo-img {
-      height: 40px; /* Set a smaller height */
-      width: 40px; /* Set a smaller width */
+      height: 60px; /* Set a smaller height */
+      width: 60px; /* Set a smaller width */
       border-radius: 50%; /* Make the image round */
       margin-right: 15px; /* Space between logo and text */
   }

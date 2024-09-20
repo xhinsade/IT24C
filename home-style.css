@@ -45,8 +45,8 @@ font-size: 75px;
 }
 
 .logo-img {
-    height: 40px; /* Set a smaller height */
-    width: 40px; /* Set a smaller width */
+    height: 60px; /* Set a smaller height */
+    width: 60px; /* Set a smaller width */
     border-radius: 50%; /* Make the image round */
     margin-right: 15px; /* Space between logo and text */
 }
