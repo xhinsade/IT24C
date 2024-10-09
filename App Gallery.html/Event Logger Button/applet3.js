@@ -39,4 +39,8 @@ class DataLogger{
         
         this.displayLogCount();
     }
+
+    countLogs(){
+        return this.loggedData.length;
+    }
 }
