@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const element = document.getElementById('displayText');
+    if (element) {
+        element.innerHTML = "Your text will appear here!";
+    }
+});
+
+
 // Create an array to store user data
 let students = [];
 
@@ -38,7 +46,7 @@ function saveData() {
 
             users.forEach((student, index) => {
                 const li = document.createElement('li');
-                li.textContent = `${index + 1}. Name: ${student.name}, Year Level: ${student.yearLevel}, Address: ${students.address}, Course Program: ${student.courseProgram}`;
+                li.textContent = `${index + 1}. Name: ${student.name}, Year Level: ${student.yearLevel}, Address: ${student.address}, Course Program: ${student.courseProgram}`;
                 savedDataList.appendChild(li);
             });
         }
@@ -46,3 +54,5 @@ function saveData() {
         window.onload = function() {
     displayData();
         }
+        
+        document.getElementById('displayText')
