@@ -103,7 +103,7 @@ body {
 }
 
 .applet-container {
- width: 300px; /* Adjust the width of the form box */
+            width: 300px; /* Adjust the width of the form box */
             padding: 20px;
             background-color: #f9f9f9; /* Light background color */
             border: 1px solid #ccc; /* Optional border */
