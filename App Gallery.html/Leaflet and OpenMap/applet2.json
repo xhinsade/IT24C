@@ -1,0 +1,28 @@
+[
+  {
+    "latitude ": 8.359735,
+        "longitude": 124.869206,
+        "message": "CCS Faculty Office"
+  }, 
+  {
+    "latitude": 8.359639,
+        "longitude": 124.869179,
+        "message": "CCS Laboratory 1"
+  },
+  {
+  "latitude": 8.359554,
+        "longitude": 124.869153,
+        "message": "CCS Laboratory 2"
+        },
+        {
+        "latitude": 8.384871,
+        "longitude": 124.840070,
+        "message": "Balay ni Xhinsade"
+        }, 
+        
+        {
+        "latitude": 8.390804,
+        "longitude": 124.833762,
+        "message": "Balay ni crushiecakes lovable"
+        }
+]

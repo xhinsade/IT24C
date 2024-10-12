@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Applet 1 - Basic Events</title>
+</head>
+
+    <style>
+        .applet-container{
+            margin-top: 1rem;
+            margin-left: 2rem;
+        }
+    </style>
+
+<body>
+  
+  <div class="applet-container">
+    <h3> Type Input Event</h3>
+    <h1 id="displayText"> Your text will appear here! </h1>
+    <input type="text" id="textbox" placeholder="Type Something Here!!" oninput="updateDisplay()">
+    
+    <br>
+    <br>
+    <h3> Click Button Event</h3>
+    <button class="btn btn-primary" onclick="showAlert()" > Display Alert</button>
+    
+  </div>
+ 
+ <script src="applet1.js"></script>
+</body>
+
+</html>
