@@ -7,12 +7,12 @@ body {
 }
 
 .title {
-  margin-top: 7rem;
-  margin-bottom: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bolder;
-  font-size: 60px;
+  font-size: 45px;
   color: white;
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
 }
@@ -105,7 +105,7 @@ body {
 .applet-container {
             width: 300px;
             padding: 20px;
-            color: black;
+            color: whitesmoke;
             font-size: 15px;
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
@@ -113,9 +113,11 @@ body {
             border: px solid #660094; 
             border-radius: 8px; 
             margin: 50px auto;
-            margin-top: 8rem;
+            margin-top: 3rem;
             text-align: left;
             box-shadow: 0 0 8px 10px rgba(128, 0, 128, 0.6);
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
+
         }
         
         .applet-container p {
@@ -139,5 +141,7 @@ body {
             font-family: 'Times New Roman', Times, serif;
             font-size: 20px;
             font-weight: bold;
-            color: black;
+            color: white;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
+            
         }
