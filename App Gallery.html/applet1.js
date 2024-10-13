@@ -62,7 +62,3 @@ function displayData() {
     });
 }
 
-// Load data from local storage when the page loads
-window.onload = function() {
-    displayData();
-}
