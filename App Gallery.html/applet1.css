@@ -103,13 +103,13 @@ body {
 }
 
 .applet-container {
-            width: 300px;
+            width: 500px;
             padding: 20px;
             color: whitesmoke;
             font-size: 15px;
             font-family: 'Times New Roman', Times, serif;
             font-weight: bold;
-            background-color: #A865B5;; 
+            background-color: #A865B5;
             border: px solid #660094; 
             border-radius: 8px; 
             margin: 50px auto;
