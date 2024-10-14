@@ -1,36 +1,80 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title> Applet 1 - Basic Events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Gallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="applet1.css">
 </head>
 
-    <style>
-        .applet-container{
-            margin-top: 1rem;
-            margin-left: 2rem;
-        }
-        
-    </style>
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(25, 3, 25);">
+
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"> Event Driven Programming</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Applets
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="applet1.html">Applet 1: Basic Event</a></li>
+                        <li><a class="dropdown-item" href="applet2.html">Applet 2: LeafLet and OpenMap</a></li>
+                        <li><a class="dropdown-item" href="applet3.html">Applet 3: Button Event Logger</a></li>
+                    </ul>
+                </li>
+             
+                </li>
+            </ul>
+          <div class="search-container">
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</div>
+
+        </div>
+    </div>
+</nav>
 
 <body>
-  
-  <div class="applet-container">
-    
-    <h3> Type Input Event</h3>
-    <h3 id="displayText"> Your text will appear here! </h3>
-    <input type="text" id="textbox" placeholder="Type Something Here!!" oninput="updateDisplay()">
-    
-    <br>
-    <br>
-    <h3> Click Button Event</h3>
-    <button class="btn btn-primary" onclick="showAlert()" > Display Alert</button>
-    
-  </div>
- 
- <script src="applet1.js"></script>
-</body>
+    <h1 class="title">Applet Gallery</h1>
 
+    <div class="applet-container">
+    
+    <p>Please Fill In:</p>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name" autocomplete="off">
+    <br><br>
+
+    <label for="yearLevel">Year Level:</label>
+    <input type="text" id="yearLevel" placeholder="Enter your year level" autocomplete="off">
+    <br><br>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" placeholder="Enter your address" autocomplete="off">
+    <br><br>
+
+    <label for="courseProgram">Course Program:</label>
+    <input type="text" id="courseProgram" placeholder="Enter your course program" autocomplete="off">
+    <br><br>
+
+    <button class="btn btn-primary" onclick="saveData()">Save Data</button>
+    <br><br>
+</div>
+
+<ul id="savedData"></ul>
+<div id="savedMessage"></div>
+
+    <script src="applet1.js"></script>
+</body>
 </html>
