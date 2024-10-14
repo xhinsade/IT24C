@@ -34,26 +34,26 @@ function saveData() {
             document.getElementById("name").value = '';
             document.getElementById("yearLevel").value = '';
             document.getElementById("address").value = '';
-            document.getElementById("courseProgram").value = '';
-
-            // Display saved data
-            displayData();
-
-            // Provide feedback that data is saved
-            document.getElementById('savedMessage').innerHTML = '<p>Data saved successfully!</p>';
+            document.getElementById("courseProgram").value = ''
         }
     } else {
         alert('Please fill all the fields!');
     }
 }
 
-// Function to display saved data
+
+
 function displayData() {
     const savedDataList = document.getElementById("savedData");
     savedDataList.innerHTML = ''; // Clear previous data
 
     const existingData = localStorage.getItem('students');
     const students = existingData ? JSON.parse(existingData) : [];
+
+    if (students.length === 0) {
+        savedDataList.innerHTML = '<li>No student data available.</li>'; // Display empty state
+        return;
+    }
 
     students.forEach((student, index) => {
         const li = document.createElement('li');
@@ -62,3 +62,16 @@ function displayData() {
     });
 }
 
+function clearDisplayedData() {
+    // Clear the displayed data
+    document.getElementById("savedData").innerHTML = ''; // Clears displayed data
+    
+    // Clear all student data from localStorage
+    localStorage.removeItem('students');
+
+    // Show alert indicating the data is empty
+    alert("No student data available.");
+
+    // Optionally, you can call displayData here if you want to show the empty state immediately
+    displayData();
+}
