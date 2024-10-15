@@ -1,0 +1,124 @@
+body{
+    background-image: url("bg-images/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  @font-face {
+    font-family: 'Adlery Pro';
+    src: url('fonts/adlery-pro-font/AdleryPro-xD7K.ttf') format('woff2'),
+         url('fonts/adlery-pro-font/AdleryProBlockletter-pW8K.ttf') format('woff');
+    font-weight: normal; /* Adjust as needed */
+    font-style: normal;
+}
+
+section p {
+    text-align: center; /* Centers the text */
+    font-size: 20px; /* Optional: adjust font size */
+    color: black; /* Text color */
+}
+
+.flyer {
+    display: flex; /* Use Flexbox for centering */
+    justify-content: left; /* Align items to the left */
+    margin-top: 20px; /* Space above the image */
+    margin-bottom: 40px; /* Space below the flyer */
+}
+
+.flyer img {
+    width: 750px; /* Set width */
+    height: 850px; /* Set height */
+    margin: 60px; /* Margin around the image */
+}
+
+.about-content {
+    background-color: #8d8c8c; /* Gray background */
+    border: 3px solid; /* Lighter border */
+    padding: 35px; /* Padding */
+    margin: 35px; /* Margin */
+    border-radius: 5px; /* Rounded corners */
+    font-family: 'Times New Roman', Times, serif; /* Font style */
+    color: black; /* Font color */
+}
+
+.about-content p {
+    line-height: 1.5; /* Line spacing */
+}
+
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Adlery Pro', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 75px;
+}
+
+.header {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Center items vertically */
+    overflow: hidden;
+    background-color: rgb(124, 35, 76);
+    padding: 20px 10px;
+}
+
+.header-Left {
+    display: flex; /* Keep items in a row */
+    align-items: center; /* Center items vertically */
+}
+
+
+.logo-img {
+    height: 70px;
+    width: 70px; 
+    border-radius: 50%; 
+    margin-right: 5px; 
+}
+
+
+.header-Right {
+    display: flex; /* Use flex for navigation links */
+    align-items: center; /* Center links vertically */
+}
+
+.header a {
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 25px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 10px; /* Space between navigation links */
+}
+
+.header a:hover {
+    background-color: rgba(201, 52, 114, 0.637);
+    color: white;
+}
+
+.header a.active {
+    background-color: rgb(121, 7, 64);
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(66, 6, 41);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+#content {
+    color: rgb(252, 247, 247);
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 75px;
+}
