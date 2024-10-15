@@ -1,6 +1,9 @@
 .applet-container {
-    margin-top: 1rem;
-    margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 5rem;
   }
   
   .applet-3 {
