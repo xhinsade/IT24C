@@ -1,28 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Applet 2 - Leaflet Map</title>
-  <!-- Add Leaflet CSS -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaflet Map Example</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
+    <div id="map"></div>
 
-<div class="applet container">
-  <h3>Leaflet Map Basics</h3>
-  
-          <div class="card text-center mb-3" style="width:22rem;">
-            <div class="card-body">
-                <h5 class="card-title">Applet 1 - Basic Events</h5>
-                <p class="card-text">This application contains the Basic Implementation of DOM Events.</p>
-                <a href="map.html" class="btn btn-primary">Click Here!!</a>
-            </div>
-        </div>
-</div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        class LeafletMap {
+            constructor(containerId, center, zoom) {
+                this.map = L.map(containerId).setView(center, zoom);
+                this.initTileLayer();
+            }
 
+            initTileLayer() {
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    maxZoom: 19,
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(this.map);
+            }
 
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<script src="applet2.js"></script>
+            addMarker(lat, lng, message) {
+                const marker = L.marker([lat, lng]).addTo(this.map);
+                marker.bindPopup(message);
+            }
+
+            loadMarkersFromJson(url) {
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data);
+                        data.forEach(marker => {
+                            this.addMarker(marker.latitude, marker.longitude, marker.message);
+                        });
+                    })
+                    .catch(error => console.error('Error loading markers:', error));
+            }
+        }
+
+        const myMap = new LeafletMap('map', [8.360004, 124.868419], 18);
+
+        // Adding predefined markers
+        myMap.addMarker(8.359735, 124.869206, 'CCS Faculty Office');
+        myMap.addMarker(8.359639, 124.869179, 'CCS Laboratory 1');
+        myMap.addMarker(8.359554, 124.869153, 'CCS Laboratory 2');
+        myMap.addMarker(8.384871, 124.840070, 'Balay ni Xhinsade');
+        myMap.addMarker(8.390804, 124.833762, 'Balay ni crushiecakes lovable');
+
+        // Load markers from JSON file
+        myMap.loadMarkersFromJson('applet2.json');
+    </script>
 </body>
 </html>
