@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener for clearing logs
     document.getElementById('clearButton').addEventListener('click', clearLogs);
+    
+    // Event listener for search form submission
+    document.getElementById('searchForm').addEventListener('submit', searchEntry);
 });
 
 let collectedData = [];
@@ -59,4 +62,23 @@ function clearLogs() {
     document.getElementById("idContainer").innerHTML = ''; // Clear logs
     document.getElementById('logCount').textContent = "Total Logs: 0"; // Reset log count
     collectedData = []; // Clear collected data
+}
+
+// Function to search for a student entry
+function searchEntry(e) {
+    e.preventDefault(); // Prevent the form from submitting
+
+    const searchInput = document.getElementById("searchInput").value.trim().toLowerCase(); // Get the search input value
+
+    // Find the entry in the collected data
+    const foundEntry = collectedData.find(entry => entry.name.toLowerCase() === searchInput);
+
+    if (foundEntry) {
+        alert(`Name: ${foundEntry.name}\nSchool ID: ${foundEntry.schoolId}\nTime: ${foundEntry.time}`);
+    } else {
+        alert("No matching entry found.");
+    }
+
+    // Clear the search input field
+    document.getElementById("searchInput").value = '';
 }
