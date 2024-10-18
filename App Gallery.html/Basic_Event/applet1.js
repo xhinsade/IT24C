@@ -80,20 +80,28 @@ function displayData() {
     const savedDataList = document.getElementById("savedData");
     savedDataList.innerHTML = ''; // Clear previous data
 
-    const existingData = localStorage.getItem('students');
-    const students = existingData ? JSON.parse(existingData) : [];
+    const existingData = localStorage.getItem('students'); // Retrieve data from localStorage
+    const students = existingData ? JSON.parse(existingData) : []; // Parse or create empty array if no data
 
     if (students.length === 0) {
-        savedDataList.innerHTML = '<li>No student data available.</li>'; // Display empty state
+        savedDataList.innerHTML = '<li>No student data available.</li>'; // Display if no data
         return;
     }
 
+    // Loop through each student and display data in desired format
     students.forEach((student, index) => {
         const li = document.createElement('li');
-        li.textContent = `${index + 1}. Name: ${student.name}, Year Level: ${student.yearLevel}, Address: ${student.address}, Course Program: ${student.courseProgram}`;
-        savedDataList.appendChild(li);
+        li.innerHTML = `
+            <strong>Student ${index + 1}:</strong><br>
+            name: ${student.name}<br>
+            yearLevel: ${student.yearLevel}<br>
+            address: ${student.address}<br>
+            courseProgram: ${student.courseProgram}<br><br>
+        `;
+        savedDataList.appendChild(li); // Append formatted data to the list
     });
 }
+
 
 function clearDisplayedData() {
     // Clear the displayed data
