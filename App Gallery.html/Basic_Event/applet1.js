@@ -1,33 +1,3 @@
-// Event Listener for Student Search Form
-document.getElementById('searchForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent traditional form submission
-    searchStudentByName(); // Call the student search function
-});
-
-// Function to search students by name from localStorage
-function searchStudentByName() {
-    const searchInput = document.getElementById('searchInput').value.toLowerCase(); // Get search input
-    const existingData = localStorage.getItem('students'); // Retrieve student data from localStorage
-    const students = existingData ? JSON.parse(existingData) : []; // Parse student data or create empty array
-
-    let matchFound = false;
-
-    // Loop through students and check if the name contains the search term
-    students.forEach(student => {
-        if (student.name.toLowerCase().includes(searchInput)) { // Check name only
-            // If match found, display student information in an alert
-            alert(`Match found:\nName: ${student.name}\nYear Level: ${student.yearLevel}\nAddress: ${student.address}\nCourse Program: ${student.courseProgram}`);
-            matchFound = true;
-        }
-    });
-
-    // If no match found, show a message
-    if (!matchFound) {
-        alert('No matching student found. Please try a different name.');
-    }
-}
-
-
 // Function to save user input data
 function saveData() {
     const name = document.getElementById("name").value;
@@ -64,36 +34,31 @@ function saveData() {
             document.getElementById("name").value = '';
             document.getElementById("yearLevel").value = '';
             document.getElementById("address").value = '';
-            document.getElementById("courseProgram").value = '';
+            document.getElementById("courseProgram").value = ''
         }
     } else {
         alert('Please fill all the fields!');
     }
 }
 
+
+
 function displayData() {
     const savedDataList = document.getElementById("savedData");
     savedDataList.innerHTML = ''; // Clear previous data
 
-    const existingData = localStorage.getItem('students'); // Retrieve data from localStorage
-    const students = existingData ? JSON.parse(existingData) : []; // Parse or create empty array if no data
+    const existingData = localStorage.getItem('students');
+    const students = existingData ? JSON.parse(existingData) : [];
 
     if (students.length === 0) {
-        savedDataList.innerHTML = '<li>No student data available.</li>'; // Display if no data
+        savedDataList.innerHTML = '<li>No student data available.</li>'; // Display empty state
         return;
     }
 
-    // Loop through each student and display data in desired format
     students.forEach((student, index) => {
         const li = document.createElement('li');
-        li.innerHTML = `
-            <strong>Student ${index + 1}:</strong><br>
-            Name: ${student.name}<br>
-            Year Level: ${student.yearLevel}<br>
-            Address: ${student.address}<br>
-            Course Program: ${student.courseProgram}<br><br>
-        `;
-        savedDataList.appendChild(li); // Append formatted data to the list
+        li.textContent = `${index + 1}. Name: ${student.name}, Year Level: ${student.yearLevel}, Address: ${student.address}, Course Program: ${student.courseProgram}`;
+        savedDataList.appendChild(li);
     });
 }
 
