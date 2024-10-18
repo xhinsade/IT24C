@@ -47,10 +47,19 @@
 </nav>
 
 <body>
-    <h1 class="title"> Basic Event </h1>
-
+      
+      <h1 class="title"> Basic Event </h1>
     <div class="applet-container">
-    
+        <h3>Type input event</h3>
+        <h1 id="displayText">Your text will appear here</h1>
+        <input type="text" id="textbox" placeholder="Type something here..." oninput="updateDisplay()">
+        <br>
+        <br>
+        <h3>Click Button Event</h3>
+        <button class="btn btn-primary" onclick="showAlert()">Display Alert</button>
+           <br>
+           <br>
+           
     <p>Please Fill In:</p>
     
     <label for="name">Name:</label>
@@ -83,9 +92,10 @@
 
     <!-- Button to clear displayed data -->
     <button type="button" class="btn btn-warning" onclick="clearDisplayedData()">Clear Data</button>
-</div>
+                     </div>
+              </div>
 
-</div>
+        </div>
 
 <ul id="savedData"></ul>
 <div id="savedMessage"></div>
