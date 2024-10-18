@@ -35,9 +35,9 @@
              
                 </li>
             </ul>
-          <div class="search-container">
-    <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <div class="search-container">
+    <form id="searchForm" class="d-flex" role="search">
+        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
         <button class="btn btn-outline-success" type="submit">Search</button>
     </form>
 </div>
@@ -54,7 +54,8 @@
         
         <!-- Applet 1 -->
         
-    <div class="card text-center mb-3" style="width: 18rem;">
+  <div class="card applet-card text-center mb-3" style="width: 18rem;">
+
         <div class="card-body">
             <h5 class="card-title"> Applet 1 - Basic Events</h5>
             <p class="card-text"> This application contains the Basic Implemenation of DOM Events.</p>
@@ -64,7 +65,7 @@
 
     <!-- Applet 2 -->
     
-   <div class="card text-center mb-3" style="width: 18rem;">
+  <div class="card applet-card text-center mb-3" style="width: 18rem;">
     <div class="card-body">
         <h5 class="card-title"> Applet 2 - Leaflet Map</h5>
         <p class="card-text"> This application contains the Basic WEB Map.</p>
@@ -74,13 +75,15 @@
 
 <!-- Applet 3-->
     
-<div class="card text-center mb-3" style="width: 18rem;">
+<div class="card applet-card text-center mb-3" style="width: 18rem;">
     <div class="card-body">
         <h5 class="card-title"> Applet 2 - Event Logger</h5>
         <p class="card-text"> This application contains the Basic WEB Map.</p>
         <a href="Event_Logger_Button/applet3.html" class="btn btn-primary"> Click Here!!</a>
     </div>
 </div>
+
+<script src="app.js"></script>
 
 </body>
 </html>
