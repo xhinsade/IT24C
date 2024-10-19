@@ -80,3 +80,22 @@
     
   }
 }
+
+/* To center the form */
+form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
+/* To center the input and button horizontally */
+.form-control {
+  max-width: 300px;
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
