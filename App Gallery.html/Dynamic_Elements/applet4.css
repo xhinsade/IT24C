@@ -6,6 +6,19 @@ body {
   justify-content: center;
 }
 
+.title {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bolder;
+  font-size: 45px;
+  color: white;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+
+
 .dropdown-menu{
   background-color: #CEA2FD;
   
@@ -89,21 +102,46 @@ body {
   }
 }
 
-/* To center the form */
-form {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 10rem;
-}
+.applet-container {
+            width: 500px;
+            padding: 20px;
+            color: whitesmoke;
+            font-size: 15px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            background-color: #A865B5;
+            border: px solid #660094; 
+            border-radius: 8px; 
+            margin: 50px auto;
+            margin-top: 3rem;
+            text-align: left;
+            box-shadow: 0 0 8px 10px rgba(128, 0, 128, 0.6);
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
 
-/* To center the input and button horizontally */
-.form-control {
-  max-width: 300px;
+        }
+        
+        .applet-container p {
+            text-align: left;
+        }
+        
+    input[type="text"] {
+    border: 2px solid #660094; 
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%; 
+    box-sizing: border-box;
 }
-
-.btn-outline-success:hover {
-  background-color: #28a745;
-  color: white;
-  border-color: #28a745;
-}
+        
+        .btn-primary {
+            margin-top: 1rem;
+            display: center;
+            width: 50%;
+            text-align: center;
+            background-color: #9614d0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
+            
+        }
