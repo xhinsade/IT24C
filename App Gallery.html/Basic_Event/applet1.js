@@ -115,4 +115,20 @@ function clearDisplayedData() {
 
     // Optionally, you can call displayData here if you want to show the empty state immediately
     displayData();
-} of
+} 
+
+// Function to update the displayed text based on the input field
+function updateDisplay() {
+    const textbox = document.getElementById('textbox');
+    const displayText = document.getElementById('displayText');
+    displayText.textContent = textbox.value || "Your text will appear here"; // Update or reset text
+}
+
+// Function to show an alert when the button is clicked
+function showAlert() {
+    const textbox = document.getElementById('textbox');
+    alert(`You entered: ${textbox.value}`); // Show the alert
+    textbox.value = ''; // Clear the input box
+    updateDisplay(); // Update the display text after clearing the input
+}
+
