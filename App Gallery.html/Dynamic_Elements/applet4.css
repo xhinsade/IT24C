@@ -151,3 +151,13 @@ body {
     margin: 10px 0;
     color: green; /* Change to red for errors */
 }
+
+#studentSearchList {
+            background-color: #343a40; /* Dark background */
+            color: white; /* White text color */
+            padding: 20px; /* Space inside the box */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+            margin-top: 20px; 
+            
+}
