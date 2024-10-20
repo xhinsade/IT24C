@@ -145,3 +145,9 @@ body {
             text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
             
         }
+        
+        .notification {
+    font-weight: bold;
+    margin: 10px 0;
+    color: green; /* Change to red for errors */
+}
