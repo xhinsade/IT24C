@@ -1,1 +1,302 @@
-{}
+[
+    {
+      "student_id": 1,
+      "student_name": "Ethan Moore",
+      "student_program": "BS-Computer Science",
+      "student_enrolled_date": "2023-01-20"
+    },
+    {
+      "student_id": 2,
+      "student_name": "Ava Lee",
+      "student_program": "BS-Information Technology",
+      "student_enrolled_date": "2023-02-25"
+    },
+    {
+      "student_id": 3,
+      "student_name": "William Perez",
+      "student_program": "BS-Computer Engineering",
+      "student_enrolled_date": "2023-03-18"
+    },
+    {
+      "student_id": 4,
+      "student_name": "Isabella White",
+      "student_program": "BS-Software Engineering",
+      "student_enrolled_date": "2023-04-22"
+    },
+    {
+      "student_id": 5,
+      "student_name": "James Thompson",
+      "student_program": "BS-Cybersecurity",
+      "student_enrolled_date": "2023-05-30"
+    },
+    {
+      "student_id": 6,
+      "student_name": "Mia Anderson",
+      "student_program": "BS-Data Science",
+      "student_enrolled_date": "2023-06-10"
+    },
+    {
+      "student_id": 7,
+      "student_name": "Alexander Clark",
+      "student_program": "BS-Network Engineering",
+      "student_enrolled_date": "2023-07-25"
+    },
+    {
+      "student_id": 8,
+      "student_name": "Harper Harris",
+      "student_program": "BS-Information Systems",
+      "student_enrolled_date": "2023-08-17"
+    },
+    {
+      "student_id": 9,
+      "student_name": "Benjamin King",
+      "student_program": "BS-Computer Science",
+      "student_enrolled_date": "2023-09-20"
+    },
+    {
+      "student_id": 10,
+      "student_name": "Emily Lewis",
+      "student_program": "BS-Software Development",
+      "student_enrolled_date": "2023-10-10"
+    },
+    {
+      "student_id": 11,
+      "student_name": "Alice Williams",
+      "student_program": "BS-Software Engineering",
+      "student_enrolled_date": "2023-04-05"
+    },
+    {
+      "student_id": 12,
+      "student_name": "Michael Brown",
+      "student_program": "BS-Data Science",
+      "student_enrolled_date": "2023-05-12"
+    },
+    {
+      "student_id": 13,
+      "student_name": "Emma Davis",
+      "student_program": "BS-Cybersecurity",
+      "student_enrolled_date": "2023-06-18"
+    },
+    {
+      "student_id": 14,
+      "student_name": "Charlotte Scott",
+      "student_program": "BS-Computer Science",
+      "student_enrolled_date": "2023-01-05"
+    },
+    {
+      "student_id": 15,
+      "student_name": "Lucas Young",
+      "student_program": "BS-Software Engineering",
+      "student_enrolled_date": "2023-02-10"
+    },
+    {
+      "student_id": 16,
+      "student_name": "Amelia Adams",
+      "student_program": "BS-Information Technology",
+      "student_enrolled_date": "2023-03-14"
+    },
+    {
+      "student_id": 17,
+      "student_name": "Henry Walker",
+      "student_program": "BS-Computer Engineering",
+      "student_enrolled_date": "2023-04-02"
+    },
+    {
+      "student_id": 18,
+      "student_name": "Ella Hall",
+      "student_program": "BS-Cybersecurity",
+      "student_enrolled_date": "2023-05-08"
+    },
+    {
+      "student_id": 19,
+      "student_name": "Mason Green",
+      "student_program": "BS-Data Science",
+      "student_enrolled_date": "2023-06-21"
+    },
+    {
+      "student_id": 20,
+      "student_name": "Sophia Baker",
+      "student_program": "BS-Network Engineering",
+      "student_enrolled_date": "2023-07-13"
+    },
+    {
+      "student_id": 21,
+      "student_name": "Elijah Carter",
+      "student_program": "BS-Information Systems",
+      "student_enrolled_date": "2023-08-05"
+    },
+    {
+      "student_id": 22,
+      "student_name": "Grace Mitchell",
+      "student_program": "BS-Software Development",
+      "student_enrolled_date": "2023-09-27"
+    },
+    {
+      "student_id": 23,
+      "student_name": "Logan Perez",
+      "student_program": "BS-Computer Science",
+      "student_enrolled_date": "2023-10-18"
+    },
+    {
+      "student_id": 24,
+      "student_name": "Chloe Roberts",
+      "student_program": "BS-Software Engineering",
+      "student_enrolled_date": "2023-01-11"
+    },
+    {
+      "student_id": 25,
+      "student_name": "Daniel Evans",
+      "student_program": "BS-Information Technology",
+      "student_enrolled_date": "2023-02-15"
+    },
+    {
+      "student_id": 26,
+      "student_name": "Zoe Turner",
+      "student_program": "BS-Cybersecurity",
+      "student_enrolled_date": "2023-03-25"
+    },
+    {
+      "student_id": 27,
+      "student_name": "Sebastian Collins",
+      "student_program": "BS-Data Science",
+      "student_enrolled_date": "2023-04-07"
+    },
+    {
+      "student_id": 28,
+      "student_name": "Lily Wilson",
+      "student_program": "BS-Network Engineering",
+      "student_enrolled_date": "2023-05-20"
+    },
+    {
+      "student_id": 29,
+      "student_name": "Jackson Ramirez",
+      "student_program": "BS-Information Systems",
+      "student_enrolled_date": "2023-06-16"
+    },
+    {
+      "student_id": 30,
+      "student_name": "Avery Lewis",
+      "student_program": "BS-Software Development",
+      "student_enrolled_date": "2023-07-22"
+    },
+    {
+      "student_id": 31,
+      "student_name": "Samuel King",
+      "student_program": "BS-Computer Science",
+      "student_enrolled_date": "2023-08-03"
+    },
+    {
+      "student_id": 32,
+      "student_name": "Victoria Scott",
+      "student_program": "BS-Software Engineering",
+      "student_enrolled_date": "2023-09-12"
+    },
+    {
+      "student_id": 33,
+      "student_name": "David Wright",
+      "student_program": "BS-Information Technology",
+      "student_enrolled_date": "2023-10-08"
+    },
+    {
+      "student_id": 34,
+      "student_name": "Sophia Turner",
+      "student_program": "BS-Business Administration",
+      "student_enrolled_date": "2023-01-15"
+    },
+    {
+      "student_id": 35,
+      "student_name": "Jake Miller",
+      "student_program": "BS-Environmental Science",
+      "student_enrolled_date": "2023-02-20"
+    },
+    {
+      "student_id": 36,
+      "student_name": "Liam Robinson",
+      "student_program": "BS-Mathematics",
+      "student_enrolled_date": "2023-03-10"
+    },
+    {
+      "student_id": 37,
+      "student_name": "Olivia Martinez",
+      "student_program": "BS-Psychology",
+      "student_enrolled_date": "2023-04-01"
+    },
+    {
+      "student_id": 38,
+      "student_name": "Noah Wilson",
+      "student_program": "BS-Physics",
+      "student_enrolled_date": "2023-05-05"
+    },
+    {
+      "student_id": 39,
+      "student_name": "Aiden Hernandez",
+      "student_program": "BS-Chemistry",
+      "student_enrolled_date": "2023-06-30"
+    },
+    {
+      "student_id": 40,
+      "student_name": "Chloe Smith",
+      "student_program": "BS-Business Management",
+      "student_enrolled_date": "2023-07-15"
+    },
+    {
+      "student_id": 41,
+      "student_name": "Mason Thomas",
+      "student_program": "BS-Graphic Design",
+      "student_enrolled_date": "2023-08-20"
+    },
+    {
+      "student_id": 42,
+      "student_name": "Zoe Johnson",
+      "student_program": "BS-Communications",
+      "student_enrolled_date": "2023-09-05"
+    },
+    {
+      "student_id": 43,
+      "student_name": "Evelyn Wright",
+      "student_program": "BS-History",
+      "student_enrolled_date": "2023-10-05"
+    },
+    {
+      "student_id": 44,
+      "student_name": "Jackson Walker",
+      "student_program": "BS-Sociology",
+      "student_enrolled_date": "2023-01-30"
+    },
+    {
+      "student_id": 45,
+      "student_name": "Sophia Lewis",
+      "student_program": "BS-Political Science",
+      "student_enrolled_date": "2023-02-28"
+    },
+    {
+      "student_id": 46,
+      "student_name": "Lucas Hall",
+      "student_program": "BS-Law",
+      "student_enrolled_date": "2023-03-22"
+    },
+    {
+      "student_id": 47,
+      "student_name": "Grace Johnson",
+      "student_program": "BS-Music",
+      "student_enrolled_date": "2023-04-12"
+    },
+    {
+      "student_id": 48,
+      "student_name": "Oliver Garcia",
+      "student_program": "BS-Theater",
+      "student_enrolled_date": "2023-05-18"
+    },
+    {
+      "student_id": 49,
+      "student_name": "Liam Anderson",
+      "student_program": "BS-Astronomy",
+      "student_enrolled_date": "2023-06-15"
+    },
+    {
+      "student_id": 50,
+      "student_name": "Ella White",
+      "student_program": "BS-Culinary Arts",
+      "student_enrolled_date": "2023-07-25"
+    }
+]
