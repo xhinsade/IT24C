@@ -50,21 +50,27 @@
 
     <div class="search-container">
         <form id="searchForm" class="d-flex" role="search">
+            <!-- Search Input Box -->
             <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" required>
-            <select id="filterType" class="form-select me-2">
-                <option value="name">Filter by Name</option>
-                <option value="id">Filter by ID</option>
-                <option value="program">Filter by Program</option>
-                <option value="year">Filter by Enrolled Year</option>
-            </select>
-            <select id="nameDropdown" class="form-select me-2" style="display: none;"></select>
             <button class="btn btn-outline-success" type="submit">Search</button>
+            <br><br>
+            
+            <!-- Filter Dropdowns -->
+            <div class="filter-container">
+                <select id="filterType" class="form-select me-2">
+                    <option value="name">Filter by Name</option>
+                    <option value="id">Filter by ID</option>
+                    <option value="program">Filter by Program</option>
+                    <option value="year">Filter by Enrolled Year</option>
+                </select>
+                <select id="nameDropdown" class="form-select me-2" style="display: none;"></select>
+            </div>
         </form>
     </div>
-
 
     <script src="applet4.js"></script>
 
 </body>
+
 
 </html>
