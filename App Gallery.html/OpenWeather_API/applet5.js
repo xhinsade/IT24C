@@ -1,4 +1,4 @@
-class Weather {
+class WeatherApp {
   constructor() {
     
     //API Key
