@@ -38,7 +38,21 @@ class WeatherApp {
         document.getElementById('weatherIcon').src = iconUrl;
     
         this.weatherCard.style.display = 'block';
-}
-
-  
-}
+      }
+    }
+    
+    class WeatherService extends WeatherApp {
+    async fetchWeather() {
+        const apiKey = this.apiKey.value
+        const city = this.cityInput.value;
+        if (city) {
+            const data = await this.getWeatherData(city,apiKey);
+            if (data) {
+                this.displayWeather(data,apiKey);
+            } else {
+                alert('City not found. Please try again.');
+            }
+        } else {
+            alert('Please enter a city name.');
+        }
+    }
