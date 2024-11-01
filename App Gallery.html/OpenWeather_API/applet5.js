@@ -18,6 +18,12 @@ class Weather {
         this.description = document.getElementById('description');
         this.humidity = document.getElementById('humidity');
         this.windSpeed = document.getElementById('windSpeed');
+        
+        //Event Listener
+        this.getWeatherBtn.addEventListener('click', () => this.fetchWeather());
+        this.getLocationBtn.addEventListener('click', () => this.fetchWeatherByLocation());
+    
 
   }
+ 
 }
