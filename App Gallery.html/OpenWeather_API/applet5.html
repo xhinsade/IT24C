@@ -51,14 +51,43 @@
 <body>
 
   
-    <div class="container">
-      <h1>Weather App</h1>
-      
-      <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal" style="margin-top: 2rem;">
-          Input Information
-        </button>
-        
+    <div class="applet-container">
+        <div class="row">
+      <div class="col">
+          <!-- Form -->
+          <h1 class="text-center">Weather App</h1>
+          <form>
+              <div class="mb-3">
+                  <label for="apiKeyInput" class="form-label">API Key</label>
+                  <input type="password" class="form-control" id="apiKeyInput" placeholder="Enter API Key" required>
+                  <div id="apiKeyHelp" class="form-text">We'll never share your API key with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                  <label for="cityInput" class="form-label">City</label>
+                  <input type="text" class="form-control" id="cityInput" placeholder="Enter city name" required>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" id="getWeatherBtn" class="btn btn-primary" data-bs-dismiss="modal">Get Weather</button>
+                  <button type="button" id="getLocationBtn" class="btn btn-secondary" data-bs-dismiss="modal">Use My Location</button>
+              </div>
+          </form>
+      </div>
+
+      <div class="col">
+          <div class="card text-white" >
+              <div id="weatherCard" style="display: none; padding: 1rem; background-color: rgb(63, 63, 63);">
+                  <img id="weatherIcon" src="" alt="Weather Icon">
+                  <h2 id="cityName"></h2>
+                  <p id="temperature"></p>
+                  <p id="description"></p>
+                  <p id="humidity"></p>
+                  <p id="windSpeed"></p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+          
       <div class="card" style="margin-top: 2rem;">
           <div class="card-body" >
             <div id="weatherCard" style="display: none;">
