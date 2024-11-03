@@ -33,6 +33,10 @@ body {
   color: whitesmoke;
   text-align: center;
 }
+.form-text {
+  color: whitesmoke;
+  text-align: center;
+}
 /* Button styling */
 .btn-primary {
     margin-top: 1rem;
