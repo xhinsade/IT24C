@@ -29,10 +29,8 @@ body {
   text-align: left;
 }
 
-.applet-container h1{
-  color: whitesmoke;
-  text-align: center;
-}
+
+
 .form-text {
   color: whitesmoke;
   text-align: center;
@@ -89,17 +87,32 @@ input[type="password"] {
     text-align: center;
 }
 
+/* Add animation for weather icon */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 #weatherIcon {
     width: 100px;
     height: auto;
+    animation: float 3s ease-in-out infinite;
 }
+
 
 /* Title styling */
 h1 {
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
-    color: #A865B5;
+    color: whitesmoke;
     text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
