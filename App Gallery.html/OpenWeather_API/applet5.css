@@ -28,6 +28,11 @@ body {
 .applet-container p {
   text-align: left;
 }
+
+.applet-container h1{
+  color: whitesmoke;
+  text-align: center;
+}
 /* Button styling */
 .btn-primary {
     margin-top: 1rem;
