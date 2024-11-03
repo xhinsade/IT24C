@@ -1,0 +1,206 @@
+/* Body styling */
+body {
+    background-image: url("../img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.applet-container {
+  width: 500px;
+  padding: 20px;
+  color: whitesmoke;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  background-color: #A865B5;
+  border: px solid #660094;
+  border-radius: 8px;
+  margin: 50px auto;
+  margin-top: 3rem;
+  text-align: left;
+  box-shadow: 0 0 8px 10px rgba(128, 0, 128, 0.6);
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
+
+}
+
+.applet-container p {
+  text-align: left;
+}
+
+
+
+.form-text {
+  color: whitesmoke;
+  text-align: center;
+}
+/* Button styling */
+.btn-primary {
+    margin-top: 1rem;
+    width: 50%;
+    background-color: #9614d0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.btn-secondary {
+    background-color: #472151;
+    color: white;
+    border-color: #660094;
+}
+
+/* Modal styling */
+.modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Form input styling */
+input[type="text"],
+input[type="password"] {
+    border: 2px solid #660094;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Card for displaying weather information */
+.card {
+    margin-top: 2rem;
+    border-radius: 8px;
+    background-color: #3f3f3f;
+    box-shadow: 0 0 8px 10px rgba(128, 0, 128, 0.6);
+}
+
+.card-body {
+    color: whitesmoke;
+    padding: 20px;
+}
+
+#weatherCard {
+    display: none;
+    text-align: center;
+}
+
+/* Add animation for weather icon */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#weatherIcon {
+    width: 100px;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+
+/* Title styling */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Button container for modal actions */
+.modal-footer .btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.dropdown-menu{
+  background-color: #CEA2FD;
+  
+}
+.navbar{
+  padding: 2rem;
+  border-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 2px;
+  
+}
+
+.navbar-brand{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  color: white;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.navbar-collapse {
+  background-color: #CEA2FD;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar .dropdown-toggle {
+  background-color: #310047;
+  color: white;
+  border-style: solid;
+  border-top-width: 2px;
+  border-top-color: white;
+  margin-left: 3px;
+  
+}
+
+.navbar .dropdown-toggle:hover {
+  background-color:#472151;
+  color: white;
+}
+
+.search-container {
+    display: flex;
+    justify-content: right;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+.search-container .form-control {
+    width: 450px;
+    border-color: #472151;
+    border-width: 2px;
+}
+
+.search-container .btn-outline-success {
+    margin-left: 10px;
+    border-color: #660094;
+    border-width: 2px;
+}
+
+
+.form-control {
+  width: 250px;
+}
+
+.btn-outline-success {
+  margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 100%;
+    
+  }
+}
