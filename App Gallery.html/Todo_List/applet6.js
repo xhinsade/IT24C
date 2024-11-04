@@ -20,6 +20,23 @@ addButton.addEventListener("click", () => {
             completed: false,
             timestamp: null 
         };
+    
+    
+    if (editIndex >= 0) {
+            tasks[editIndex] = task;
+            editIndex = -1; 
+            addButton.textContent = "Add"; 
+        } else {
+            tasks.push(task);
+        }
+        
+        document.getElementById("todoInput").value = "";
+        document.getElementById("todoTime").value = "";
+        document.getElementById("todoLocation").value = "";
+        
+        displayTasks();
+    } else {
+        alert("Please enter a task and set a date & time.");
     }
 
 });
