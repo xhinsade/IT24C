@@ -99,3 +99,10 @@ function displayTasks() {
         }
     });
 }
+
+function completeTask(index) {
+    tasks[index].completed = true;
+    tasks[index].timestamp = new Date().toLocaleString(); 
+    displayTasks();
+}
+
