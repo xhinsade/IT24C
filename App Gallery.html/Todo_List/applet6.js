@@ -106,3 +106,11 @@ function completeTask(index) {
     displayTasks();
 }
 
+function editTask(index) {
+    const task = tasks[index];
+    document.getElementById("todoInput").value = task.text;
+    document.getElementById("todoTime").value = task.time.toISOString().slice(0, 16);
+    document.getElementById("todoLocation").value = task.location;
+    editIndex = index; 
+    addButton.textContent = "Update"; 
+}
