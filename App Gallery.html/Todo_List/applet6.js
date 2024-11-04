@@ -114,3 +114,8 @@ function editTask(index) {
     editIndex = index; 
     addButton.textContent = "Update"; 
 }
+
+function cancelTask(index) {
+    tasks.splice(index, 1);
+    displayTasks();
+}
