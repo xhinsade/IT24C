@@ -11,5 +11,15 @@ addButton.addEventListener("click", () => {
     const taskText = document.getElementById("todoInput").value.trim();
     const taskTime = document.getElementById("todoTime").value;
     const taskLocation = document.getElementById("todoLocation").value.trim();
+    
+    if (taskText && taskTime) {
+        const task = {
+            text: taskText,
+            time: new Date(taskTime),
+            location: taskLocation,
+            completed: false,
+            timestamp: null 
+        };
+    }
 
 });
