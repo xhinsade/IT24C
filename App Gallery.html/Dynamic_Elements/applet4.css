@@ -154,7 +154,7 @@ body {
 
 /* General styling for the student list container */
 #studentSearchList {
-  max-height: 400px;
+  max-height: 100%;
   overflow-y: auto;
   padding: 10px;
   border: 1px solid #ddd;
