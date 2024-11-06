@@ -76,7 +76,7 @@ class WeatherApp {
         } else {
             alert('Geolocation is not supported by this browser.');
         }
-    }
+    }        
     
     async getWeatherData(city,apiKey) {
         try {
@@ -110,3 +110,5 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.show();
   
 });
+
+//3a55b378cd138942f203bb49cf27f3c3
