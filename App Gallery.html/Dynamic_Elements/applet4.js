@@ -27,21 +27,30 @@ class StudentList {
 
         // Create a notification message container
         const notification = document.createElement('p');
-        notification.classList.add('notification'); // Optional: Add a class for styling
+        notification.classList.add('notification');
         studentSearchListContainer.appendChild(notification);
 
         if (students.length === 0) {
-            notification.textContent = 'No students found for your search criteria.'; // Notify if no students found
+            notification.textContent = 'No students found for your search criteria.';
         } else {
-            notification.textContent = `${students.length} student(s) found.`; // Notify how many students were found
+            notification.textContent = `${students.length} student(s) found.`;
             students.forEach(student => {
-                studentSearchListContainer.innerHTML += `
-                    <p><strong>${student.student_name}</strong></p>
-                    <p class="fw-light">Program: ${student.student_program} | Enrolled on: ${student.student_enrolled_date}</p>
+                const studentItem = document.createElement('div');
+                studentItem.classList.add('student-item');
+                studentItem.innerHTML = `
+                    <p><strong>${this.highlightText(student.student_name, this.searchQuery)}</strong></p>
+                    <p class="fw-light">Program: ${this.highlightText(student.student_program, this.searchQuery)} | Enrolled on: ${this.highlightText(student.student_enrolled_date, this.searchQuery)}</p>
                     <hr>
                 `;
+                studentSearchListContainer.appendChild(studentItem);
             });
         }
+    }
+
+    highlightText(text, query) {
+        if (!query) return text; // If there's no query, return text as is
+        const regex = new RegExp(`(${query})`, 'gi');
+        return text.replace(regex, '<span class="highlight">$1</span>'); // Highlight matching part
     }
 
     bindSearchEvent() {
@@ -72,6 +81,7 @@ class StudentList {
 
         // Real-time filtering
         studentSearchBar.addEventListener('input', () => {
+            this.searchQuery = studentSearchBar.value; // Store the current query
             this.filterStudents(studentSearchBar.value, filterType.value); // Filter on input
         });
 
