@@ -103,10 +103,12 @@ body {
 
 .applet-flex-container {
   display: flex;
-  justify-content: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 5rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 10rem;
+  width: 80%;
 
 }
 
